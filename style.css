@@ -1,0 +1,210 @@
+:root{
+  /* ## Colors
+### Primary */
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+
+  --Light-slate-blue-bg: hsl(252, 100%, 67%);
+  --Light-royal-blue-bg: hsl(241, 81%, 54%);
+
+  --Violet-blue-cr: hsla(256, 72%, 46%, 1);
+  --Persian-blue-cr: hsla(241, 72%, 46%, 0);
+/* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  /* font */
+  --primary-ff:"Hanken Grotesk", sans-serif;
+  --primary-fs:18px;
+}
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+body{
+  background-color: var(--Pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:var(--primary-ff) ;
+  font-size: var(--primary-fs);
+} 
+main{
+  max-width: 700px;
+  display: flex;
+  background-color: var(--White);
+  border-radius: 25px;
+  box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.2);
+  margin: 0 20px;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) );
+  max-width:350px ;
+  text-align: center;
+  padding: 30px;
+  border-radius: 25px;
+}
+.left h6{
+  color: var(--Light-lavender);
+  font-size: 25px;
+}
+.round{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0) );
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.round .big{
+  color: var(--White);
+  font-size: 76px;
+  text-align: center;
+  font-weight: 600;
+}
+.round .small{
+  color: var(--Light-lavender);
+  opacity: 0.5;
+}
+.buttom_text{
+  margin-top:20px;
+  color: var(--Pale-blue);
+  padding: 0 33px;
+}
+.buttom_text p{
+  padding-top: 10px;
+  color: var(--Light-lavender);
+  font-size: 16px;
+}
+.right{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.right h1{
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.reaction{
+  display: flex;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.content_left{
+  display: flex;
+  gap: 8px;
+}
+.reaction .content_left h3{
+  color: var(--Light-red);
+  font-size: 18px;
+}
+.right_content span{
+  color: var(--Dark-gray-blue);/*for all right side span tag*/
+  opacity: 0.6;
+}
+.right_content p{
+  font-weight: 600;
+}
+
+.memory{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: hsla(39, 100%, 56%, 0.1);
+  margin-bottom: 15px;
+}
+.memory .content_left h3{
+  color: var(--Orangey-yellow);
+  font-size: 18px;
+}
+.verbal{
+  display: flex;
+  background-color: hsla(166, 100%, 37%, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.verbal .content_left h3{
+  color: var(--Green-teal);
+  font-size: 18px;
+}
+.visual{
+  display: flex;
+  background-color: hsla(234, 85%, 45%,0.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.visual .content_left h3{
+  color: var(--Cobalt-blue);
+  font-size: 18px;
+}
+button{
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--Dark-gray-blue);
+  color: var(--Pale-blue);
+}
+button:hover{
+  background-image: linear-gradient(var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+}
+
+/*resonsive*/
+@media screen and (max-width:665px) {
+  main{
+    flex-direction: column;
+  }
+  .buttom_text{
+    padding: 0 ;
+  }
+}
+@media screen and (max-width:420px) {
+  body{
+    justify-content: start;
+  }
+  main{
+    max-width: 100%;
+    border-radius: 0 0 25px 25px;
+    margin: 0;
+  }
+  .left{
+    border-radius: 0 0 25px 25px;
+    max-width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+  .buttom_text{
+  padding: 0 33px;
+  }
+}
