@@ -23,7 +23,7 @@ It displays a score result on the left and a breakdown of different categories o
 - CSS3 (Flexbox, Custom Properties)
 
 ## 🚀 Live Demo
-[Live Site URL]([https://your-live-site-link.com](https://shimanto-codes.github.io/Results-summary-component/))
+[Live Site URL](https://shimanto-codes.github.io/Results-summary-component/)
 
 ## 💡 What I Learned
 - How to use CSS variables inside gradients.
