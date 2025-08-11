@@ -56,7 +56,7 @@ main{
   background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) );
   max-width:350px ;
   text-align: center;
-  padding: 30px;
+  padding:40px  30px;
   border-radius: 25px;
 }
 .left h6{
@@ -72,7 +72,7 @@ main{
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .round .big{
   color: var(--White);
@@ -83,33 +83,38 @@ main{
 .round .small{
   color: var(--Light-lavender);
   opacity: 0.5;
+  padding-top: 5px;
 }
 .buttom_text{
   margin-top:20px;
   color: var(--Pale-blue);
-  padding: 0 33px;
+  padding: 0 25px;
+  font-weight: 600;
+  font-size: 20px;
 }
 .buttom_text p{
   padding-top: 10px;
   color: var(--Light-lavender);
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.4;
 }
 .right{
   width: 350px;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 40px 30px;
 }
 .right h1{
   margin-bottom: 25px;
-  font-size: 20px;
+  font-size: 25px;
+  color: var(--Dark-gray-blue);
 }
 .reaction{
   display: flex;
   background-color: hsla(0, 100%, 67%, 0.1);
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -133,7 +138,7 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   background-color: hsla(39, 100%, 56%, 0.1);
   margin-bottom: 15px;
@@ -147,7 +152,7 @@ main{
   background-color: hsla(166, 100%, 37%, 0.1);
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -160,7 +165,7 @@ main{
   background-color: hsla(234, 85%, 45%,0.1);
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   margin-bottom: 40px;
 }
@@ -169,11 +174,12 @@ main{
   font-size: 18px;
 }
 button{
-  padding: 20px;
-  border-radius: 20px;
+  padding: 15px;
+  border-radius: 30px;
   border: none;
   background-color: var(--Dark-gray-blue);
   color: var(--Pale-blue);
+  font-size: 18px;
 }
 button:hover{
   background-image: linear-gradient(var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
@@ -181,24 +187,26 @@ button:hover{
 
 /*resonsive*/
 @media screen and (max-width:665px) {
+    body{
+    justify-content: start;
+  }
   main{
     flex-direction: column;
   }
   .buttom_text{
     padding: 0 ;
   }
+  .left{
+    border-radius: 0 0 25px 25px;
+  }
 }
 @media screen and (max-width:420px) {
-  body{
-    justify-content: start;
-  }
   main{
     max-width: 100%;
     border-radius: 0 0 25px 25px;
     margin: 0;
   }
-  .left{
-    border-radius: 0 0 25px 25px;
+   .left{
     max-width: 100%;
   }
   .right{
